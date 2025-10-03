@@ -34,3 +34,21 @@ a:hover {
     color: #000;
     cursor: pointer;
 }
+
+/* Estilo del botón de reproducción */
+#playButton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background: #444;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#playButton:hover {
+    background: #fff;
+    color: #000;
+}
