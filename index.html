@@ -9,13 +9,25 @@
     <div class="container">
         <h1>Una historia para leer:</h1>
         <a href="historia.pdf" download>PDF</a>
+        <br>
+        <button id="playButton">aburrido 🥱, distraete</button>
     </div>
 
-    <!-- Audio de fondo -->
-    <audio autoplay loop>
+    <!-- Audio de fondo oculto -->
+    <audio id="miAudio" loop>
         <source src="pista.mp3" type="audio/mpeg">
         Tu navegador no soporta audio.
     </audio>
+
+    <script>
+        const playButton = document.getElementById('playButton');
+        const miAudio = document.getElementById('miAudio');
+
+        playButton.addEventListener('click', () => {
+            miAudio.play();
+            playButton.style.display = 'none'; // Oculta el botón después de reproducir
+        });
+    </script>
 
     <!-- Criptograma para descifrar el enlace -->
     <!-- /p1-l3-c40 -->
